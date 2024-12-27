@@ -22,5 +22,32 @@ A simple Flutter application that fetches and displays weather data for a city e
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/weather-app.git
-cd weather-app
+git clone https://github.com/kp-ijaz/weather_app.git
+cd weather_app
+```
+
+###Install dependencies:
+```bash
+flutter pub get
+```
+Replace the API_KEY in the weather API calls with your own API key (if you're using an external weather API like OpenWeatherMap).
+
+Run the app:
+
+```bash
+flutter run
+```
+
+###Usage
+
+- **City Search**: Start typing the name of a city in the search bar, and it will show suggestions based on previously searched cities.
+- **View Weather**: After entering a city, the app will show the current weather details such as temperature, humidity, and wind speed.
+- **Clear Search**: You can clear the search bar to remove any input.
+
+###Project Structure
+
+- lib/:
+- bloc/: Contains the Bloc files, including the events, states, and the business logic for weather data.
+- view/: Contains the UI code, including widgets for weather details, search bar, and recent cities.
+- main.dart: The entry point of the app.
+- assets/: Contains image assets for the app (e.g., weather icons).
